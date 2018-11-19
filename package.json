@@ -1,0 +1,57 @@
+{
+  "name": "trsh",
+  "version": "0.1.1",
+  "description": "Upload files and folders to transfer.sh",
+  "keywords": [
+    "file",
+    "share",
+    "transfer",
+    "upload"
+  ],
+  "homepage": "https://github.com/cprecioso/transfer.sh#readme",
+  "bugs": {
+    "url": "https://github.com/cprecioso/transfer.sh/issues"
+  },
+  "repository": "git+https://github.com/cprecioso/transfer.sh.git",
+  "license": "ISC",
+  "author": "Carlos Precioso",
+  "files": [
+    "lib",
+    "bin.js"
+  ],
+  "main": "lib/index.js",
+  "bin": {
+    "transfer": "bin.js",
+    "trsh": "bin.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "watch": "tsc -p . -w"
+  },
+  "dependencies": {
+    "byte-size": "^4.0.4",
+    "es-observable": "^1.0.4",
+    "execa": "^1.0.0",
+    "fs-extra": "^7.0.1",
+    "get-stream": "^4.1.0",
+    "got": "^9.3.2",
+    "gulp-vinyl-zip": "^2.1.1",
+    "listr": "^0.14.3",
+    "mobx": "^5.6.0",
+    "vinyl-fs": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/execa": "^0.9.0",
+    "@types/fs-extra": "^5.0.4",
+    "@types/get-stream": "^3.0.1",
+    "@types/got": "^9.2.0",
+    "@types/listr": "^0.13.0",
+    "@types/node": "^10.12.9",
+    "@types/vinyl": "^2.0.2",
+    "@types/vinyl-fs": "^2.4.9",
+    "typescript": "^3.1.6"
+  }
+}
